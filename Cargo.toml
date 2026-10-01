@@ -1,0 +1,23 @@
+[package]
+name = "ispeach"
+version = "0.1.0"
+edition = "2024"
+description = "Detect whether an image is Peach, a cute little kitten. Model weights embedded."
+license = "MIT"
+
+[lib]
+name = "ispeach"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ispeach"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.104"
+image = "0.25.10"
+tract-onnx = "0.23.8"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
