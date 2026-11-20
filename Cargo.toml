@@ -1,6 +1,6 @@
 [package]
 name = "ispeach"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 description = "Detect whether an image is Peach, a cute little kitten. Model weights embedded."
 license = "MIT"
